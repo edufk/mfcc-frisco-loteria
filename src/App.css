@@ -1,38 +1,71 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+.tabla {
+  width: 550px;
+  page-break-before: always;
+  position: relative;
+}
+.tabla h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tabla .tarjeta {
+  width: 25%;
+  display: inline-block;
+}
+.tabla .tarjeta img {
+  padding: 2px;
+  width: auto;
+  height: 218px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.jugar {
+  outline: none;
+  padding: 0 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.jugar header {
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.jugar header img {
+  height: 200px;
+  display: block;
+  float: right;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jugar .tarjeta {
+  width: 220px;
+  height: auto;
+  margin: 0 auto;
+}
+.jugar .tarjeta img {
+  width: 100%;
+  height: auto;
+}
+.jugar .tarjetasAnteriores img {
+  width: 50px;
+  height: auto;
+}
+.jugar .acciones {
+  position: fixed;
+  top: 200px;
+  left: 100px;
+}
+.jugar .acciones ul {
+  list-style: none;
+}
+.jugar .acciones li {
+  display: block;
+}
+.jugar .acciones li a {
+  background: #090274;
+  color: #fff;
+  padding: 1rem 2rem;
+  width: 150px;
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+.jugar .acciones li a:hover {
+  background-color: #06a8ed;
+  color: #000;
 }
