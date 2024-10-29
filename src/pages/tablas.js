@@ -2,7 +2,7 @@
 function Tablas() {
 
     const numTarjetas = 54;
-    const path = '/imagenes/tablas-small/';
+    const path = './imagenes/tablas-small/';
     const numTablas = 100;
     const tarjetasPorTabla = 16;
   

@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 
 function Jugar() {
     const numTarjetas = 54;
-    const path = '/imagenes/';
+    const path = './imagenes/';
     const [tarjetasMostradas, setTarjetasMostradas] = useState([]);
     const [jugando, setJugando] = useState(false);
     const jugandoRef = useRef(jugando)
@@ -93,8 +93,8 @@ function Jugar() {
     return (
         <div className="jugar" onKeyDown={handleKeyDown} tabIndex="0">
             <header>
-                <h1>Lotería MFCC Frisco 2022</h1>
-                <img src="/logo.png"/>
+                <h1>Lotería MFCC Frisco</h1>
+                <img src="./logo.png"/>
             </header>
             {tarjeta}
             <div className="tarjetasAnteriores">{tarjetasAnteriores}</div>
